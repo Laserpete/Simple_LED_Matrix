@@ -1,9 +1,6 @@
 #include <Arduino.h>
 #include <FastLED.h>
-#include <FontMatrise.h>
 #include <LEDMatrix.h>
-
-// Change the next 6 defines to match your matrix type and size
 
 #define LED_PIN 5
 #define COLOR_ORDER GRB
@@ -32,7 +29,6 @@ void setup() {
   FastLED.addLeds<CHIPSET, LED_PIN, COLOR_ORDER>(leds[0], leds.Size());
   FastLED.setBrightness(128);
   FastLED.clear(true);
-
   // delay(500);
   // FastLED.showColor(CRGB::Red);
   // delay(1000);
